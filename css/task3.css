@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+.logo{
+    margin: 0px 0px -5px 20px;
+}
+
+
+span{
+    font-weight: bold;
+}
+
 body{
     font-family: "Inter", sans-serif;
     max-width: 1440px;
@@ -12,6 +21,7 @@ body{
 }
 
 header{
+    background-color: #e42e08;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,6 +139,11 @@ footer{
     justify-content: space-between;
     flex-direction: column;
 }
+
+.footer-info h2{
+font-size: small;
+}
+
 
 .social-media{
     display: flex;
