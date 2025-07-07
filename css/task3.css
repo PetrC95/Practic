@@ -15,7 +15,7 @@ span{
 
 body{
     font-family: "Inter", sans-serif;
-    max-width: 1440px;
+    width: max-content;
     margin: 0 auto;
     padding: 56px 80px;
 }
