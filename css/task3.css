@@ -25,6 +25,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 8px;
 }
 
 .logo, header nav a, .mprodabout, .additional_details, .pcard figcaption{
