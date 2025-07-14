@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Таверна "Дядя Геральт"</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">Таверна <br><span>Дядя Геральт</span></a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Меню</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Мероприятия</a></li>
+                        <li class="nav__item"><a href="#reviews" class="nav__link">Новости</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Меню">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Здравствуй, путник!</h1>
+                <p class="hero__subtitle">
+                Таверна “Дядя Геральт” — это тематическое заведение, которое переместит в мир средневекового фэнтези.
+                Здесь легко представить себя на месте героев из любимых вселенных, которые пришли развлечься после битвы с чудовищами или поисков великих артефактов. Короли, драконы, магические войны и живые боги это, конечно, хорошо, но отдых необходим даже спасателям мира!
+                </p>
+                <div class="hero__buttons">
+                    <a href="#menu" class="btn btn--primary">Зайти в таверну</a>
+                    <a href="#contacts" class="btn btn--outline">Подробнее о нас</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__image">
+                        <img src="images/tavern.jpeg" alt="">
+                    </div>
+                    <div class="about__content">
+                        <h2 class="section-title">Будь как дома, путник</h2>
+                        <p class="about__text">Мы рады как искателям необычных мест, так и давним поклонникам фэнтези. Случайные путники и заядлые приключенцы здесь могут отведать средневековой кухни или пропустить кружечку-другую эля под напевания и струнные переборы бывалых менестрелей.</p>
+                        <p class="about__text">В таверне вас ждут:</p>
+                        <ul class="about__features">
+                            <li class="feature-item">
+                                <span>Музыкальные концерты каждую субботу;</span>
+                            </li>
+                            <li class="feature-item">
+                                <span>Атмосфера средневековья;</span>
+                            </li>
+                            <li class="feature-item">
+                                <span>Разнообразное меню с большим выбором мясных блюд;</span>
+                            </li>
+                            <li class="feature-item">
+                                <span>Уникальная барная карта —  авторские коктейли
+                                и настойки, пенное на кранах и в бутылках;</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">Меню таверны</h2>
+                <div class="menu__content active" id="coffee">
+                    <div class="menu__grid">
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Супы</h3>
+                                <span class="menu-item__price">от 410р.</span>
+                            </div>
+                            <p class="menu-item__description">Наваристые и согревающие</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Горячее сытное</h3>
+                                <span class="menu-item__price">от 740р.</span>
+                            </div>
+                            <p class="menu-item__description">Сочные запечённые рёбрышки, рулька и многое другое</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Закуски</h3>
+                                <span class="menu-item__price">от 270р.</span>
+                            </div>
+                            <p class="menu-item__description">Сало, солёные огурчики, селёдочка, ты только погляди!</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Шоты на мече</h3>
+                                <span class="menu-item__price">от 1300р.</span>
+                            </div>
+                            <p class="menu-item__description">Если не пробовали — считайте, что в таверне не были</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Напитки</h3>
+                                <span class="menu-item__price">пиво от 270р.<br>кофе от 110р.</span>
+                            </div>
+                            <p class="menu-item__description">Сегодня Лусканское светлое? Или, может, Анк-Морпоркское тёмное?</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Безопасные эликсиры для людей</h3>
+                                <span class="menu-item__price">от 320р.</span>
+                            </div>
+                            <p class="menu-item__description">Колдовские, с травами волшебными</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы</h2>
+                <div class="reviews__slider">
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Место на 4,7.
+                        Плюсы:
+                        Вкусная еда, хорошее пиво и сидр, дружелюбный персонал; 
+                        очень уютный двухэтажный зал, крутое оформление,
+                        соответствующая задумке атмосфера и музыка,
+                        можно выйти с бокалом на задний дворик, если вы захотели развеяться.
+                        Отдельным плюсом выделю возможность поиграть в гвинт ("Ты играешь в Гвинт?") качественными картами и на специальном для этого столике.
+                        </p>
+                        
+                        <div class="review__author">
+                            <img src="images/otziv1.jpeg" alt=""
+                                class="review__photo">
+                            <span class="review__name">Макс Шеховцов</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Были с супругом на днях. Праздновали день рождения. Все очень понравилось. Интерьер подстать тематике таверны, блюда шикарные, все очень вкусно, коктейли волшебные. Также можно просить сделать авторские напитки. Муж оценил борщ. Не понимаю, почему так много негативных отзывов об официантах, но Тимур очень хорошо выполнял свою работу, несмотря на большую загрузку (была почти полная посадка).
+                        Из минусов, не всегда играла тематическая музыка.
+                        С супругом обязательно вернемся, есть еще позиции, которые хотим попробовать. </p>
+                        <div class="review__author">
+                            <img src="images/otziv2.jpeg" alt=""
+                                class="review__photo">
+                            <span class="review__name">Polina</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Любимое заведение с очень вкусной едой и разнообразными напитками. Особенно нравится атмосфера (если вы разбираетесь в фэнтезийных играх - точно найдете множество пасхалок) с огромным количеством деталей в декоре. Отдельный восторг от меню (названия и описания блюд и напитков). А также очень люблю вечера с живой музыкой, довольно динамичные и, одновременно с тем, душевные. Также замечательное место для знакомств (было дело) или же просто для хорошего времяпрепровождения с друзьями. </p>
+                        <div class="review__author">
+                            <img src="images/otziv3.jpeg" alt=""
+                                class="review__photo">
+                            <span class="review__name">Рита</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__info">
+                        <h2 class="section-title">Контакты</h2>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>Москва, улица Земляной Вал, 58.
+                            Таверна в пяти минута от станции метро Таганская</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>+7 (925) 100-55-70</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>geralttavern@yandex.ru</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <span>Понедельник, вторник, среда, четверг, воскресенье: 12:00 — 0:00
+                            Пятница, суббота: 12:00 — 2:00
+                        </span>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-vk"></i></a>
+                            <a href="#" class="social-link" aria-label="Telegram"><i
+                                    class="fab fa-telegram-plane"></i></a>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?ll=37.655066%2C55.747345&z=19"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <a href="#" class="logo">Таверна<br><span>Дядя Геральт</span></a>
+                    <p class="footer__text">Будь как дома путник,
+                    Я ни в чём не откажу</p>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">Навигация</h3>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">О нас</a></li>
+                        <li><a href="#menu" class="footer__link">Меню</a></li>
+                        <li><a href="#about" class="footer__link">Мероприятия</a></li>
+                        <li><a href="#reviews" class="footer__link">Новости</a></li>
+                        <li><a href="#contacts" class="footer__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__subscribe">
+                    <h3 class="footer__title">Подписка</h3>
+                    <p class="footer__text">Подпишитесь на наши новости и акции</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" class="subscribe-input">
+                        <button type="submit" class="subscribe-btn"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© Copyright</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
