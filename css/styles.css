@@ -272,7 +272,7 @@ ul {
 
 /* Герой */
 .hero {
-    background-image: url(/images/background.jpg);
+    background-image: url(../images/background.jpg);
     /* background: linear-gradient(rgba(42, 26, 31, 0.7), rgba(42, 26, 31, 0.7)), url('Ссылка на изображение') no-repeat center center/cover; */
     height: 100vh;
     color: var(--white-color);
@@ -353,7 +353,7 @@ ul {
 
 /* Меню */
 .menu {
-    background-image: url(/images/menu.jpg);
+    background-image: url(../images/menu.jpg);
     height: 760px;
     width: 1500px;
     margin: 200px; 
@@ -684,7 +684,7 @@ ul {
     .nav {
         position: fixed;
         top: 80px;
-        left: -100%;
+        left: -200%;
         width: 80%;
         height: calc(100vh - 80px);
         background-color: var(--white-color);
