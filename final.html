@@ -5,33 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная - Таверна "Дядя Геральт"</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Color+Emoji&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    
+    <nav class="navigation">
+    <div class="container">
+        <button class="close">Закрыть</button>
+                <h2 class="section-title">Мероприятия</h2>
+                <div class="menu__content active" id="">
+                    <div class="menu__grid">
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Концерты</h3>
+                                <span class="menu-item__price"><img src="images/mer1.jpg" alt="" width="150px"></span>
+                            </div>
+                            <p class="menu-item__description">Живая музыка
+                            от средневековья до фолк-рока </p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Тематические недели</h3>
+                                <span class="menu-item__price"><img src="images/mer2.jpg" alt="" width="150px"></span>
+                            </div>
+                            <p class="menu-item__description">Семидневные экспедиции в знаменитые фэнтези миры</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Немного <br>волшебства</h3>
+                                <span class="menu-item__price"><img src="images/mer3.jpg" alt="" width="150px"></span>
+                            </div>
+                            <p class="menu-item__description">Чеканные монеты, экстра подачи, бонусы и другое</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+</nav>
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#" class="logo">Таверна <br><span>Дядя Геральт</span></a>
+                <a href="index.html" class=""><img class="logoimg" src="icons/logo_3_0.png" alt="">
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
                         <li class="nav__item"><a href="#menu" class="nav__link">Меню</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">Мероприятия</a></li>
-                        <li class="nav__item"><a href="#reviews" class="nav__link">Новости</a></li>
+                        <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
                         <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
-                    </ul>
-                </nav>
+                        </nav>                                             
+                     </ul>
+
                 <button class="menu-toggle" aria-label="Меню">
                     <span class="menu-toggle__line"></span>
                     <span class="menu-toggle__line"></span>
                     <span class="menu-toggle__line"></span>
                 </button>
+                
             </div>
         </div>
     </header>
@@ -45,8 +78,7 @@
                 Здесь легко представить себя на месте героев из любимых вселенных, которые пришли развлечься после битвы с чудовищами или поисков великих артефактов. Короли, драконы, магические войны и живые боги это, конечно, хорошо, но отдых необходим даже спасателям мира!
                 </p>
                 <div class="hero__buttons">
-                    <a href="#menu" class="btn btn--primary">Зайти в таверну</a>
-                    <a href="#contacts" class="btn btn--outline">Подробнее о нас</a>
+                    <button class="show">Наши мероприятия</button>
                 </div>
             </div>
         </section>
@@ -54,26 +86,40 @@
         <section id="about" class="about">
             <div class="container">
                 <div class="about__inner">
-                    <div class="about__image">
-                        <img src="images/tavern.jpeg" alt="">
-                    </div>
+<main>
+    <h1 class="page-title"></h1>
+    <div class="slider-container">
+    <div class="slider">
+      <img src="images/tavern.jpeg" alt="">
+      <img src="images/tavern2.jpeg" alt="">
+      <img src="images/tavern3.jpeg" alt="">
+      <img src="images/tavern4.jpeg" alt="">
+    </div>
+    <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+    <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+  </div>
+  </main>
                     <div class="about__content">
                         <h2 class="section-title">Будь как дома, путник</h2>
                         <p class="about__text">Мы рады как искателям необычных мест, так и давним поклонникам фэнтези. Случайные путники и заядлые приключенцы здесь могут отведать средневековой кухни или пропустить кружечку-другую эля под напевания и струнные переборы бывалых менестрелей.</p>
                         <p class="about__text">В таверне вас ждут:</p>
                         <ul class="about__features">
                             <li class="feature-item">
+                                <i class="fa-solid fa-guitar"></i>&nbsp
                                 <span>Музыкальные концерты каждую субботу;</span>
                             </li>
                             <li class="feature-item">
+                                <i class="fa-solid fa-shield"></i>&nbsp
                                 <span>Атмосфера средневековья;</span>
                             </li>
                             <li class="feature-item">
+                                <i class="fa-solid fa-utensils"></i>&nbsp
                                 <span>Разнообразное меню с большим выбором мясных блюд;</span>
                             </li>
                             <li class="feature-item">
+                                <i class="fa-solid fa-martini-glass-citrus"></i>&nbsp
                                 <span>Уникальная барная карта —  авторские коктейли
-                                и настойки, пенное на кранах и в бутылках;</span>
+                                и настойки;</span>
                             </li>
                         </ul>
                     </div>
@@ -87,6 +133,7 @@
                 <div class="menu__content active" id="coffee">
                     <div class="menu__grid">
                         <div class="menu-item">
+                            <img src="images/menu1.jpg" alt="">
                             <div class="menu-item__header">
                                 <h3 class="menu-item__title">Супы</h3>
                                 <span class="menu-item__price">от 410р.</span>
@@ -94,6 +141,7 @@
                             <p class="menu-item__description">Наваристые и согревающие</p>
                         </div>
                         <div class="menu-item">
+                            <img class="menuimg"  src="images/menu2.jpg" alt="">
                             <div class="menu-item__header">
                                 <h3 class="menu-item__title">Горячее сытное</h3>
                                 <span class="menu-item__price">от 740р.</span>
@@ -101,13 +149,15 @@
                             <p class="menu-item__description">Сочные запечённые рёбрышки, рулька и многое другое</p>
                         </div>
                         <div class="menu-item">
-                            <div class="menu-item__header">
+                            <img class="menuimg" src="images/menu3.jpg" alt="">
+                            <div class="menu-item__header">                               
                                 <h3 class="menu-item__title">Закуски</h3>
                                 <span class="menu-item__price">от 270р.</span>
                             </div>
                             <p class="menu-item__description">Сало, солёные огурчики, селёдочка, ты только погляди!</p>
                         </div>
                         <div class="menu-item">
+                            <img class="menuimg" src="images/menu4.png" alt="">
                             <div class="menu-item__header">
                                 <h3 class="menu-item__title">Шоты на мече</h3>
                                 <span class="menu-item__price">от 1300р.</span>
@@ -115,6 +165,7 @@
                             <p class="menu-item__description">Если не пробовали — считайте, что в таверне не были</p>
                         </div>
                         <div class="menu-item">
+                            <img class="menuimg" src="images/menu5.jpg" alt="">
                             <div class="menu-item__header">
                                 <h3 class="menu-item__title">Напитки</h3>
                                 <span class="menu-item__price">пиво от 270р.<br>кофе от 110р.</span>
@@ -122,6 +173,7 @@
                             <p class="menu-item__description">Сегодня Лусканское светлое? Или, может, Анк-Морпоркское тёмное?</p>
                         </div>
                         <div class="menu-item">
+                            <img class="menuimg" src="images/menu6.png" alt="">
                             <div class="menu-item__header">
                                 <h3 class="menu-item__title">Безопасные эликсиры для людей</h3>
                                 <span class="menu-item__price">от 320р.</span>
@@ -222,8 +274,8 @@
                         </span>
                         </div>
                         <div class="social-links">
-                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-vk"></i></a>
-                            <a href="#" class="social-link" aria-label="Telegram"><i
+                            <a href="https://vk.com/geralt_tavern" class="social-link" aria-label="VK"><i class="fab fa-vk"></i></a>
+                            <a href="https://t.me/geralttavern" class="social-link" aria-label="Telegram"><i
                                     class="fab fa-telegram-plane"></i></a>
                         </div>
                     </div>
@@ -241,7 +293,7 @@
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__logo">
-                    <a href="#" class="logo">Таверна<br><span>Дядя Геральт</span></a>
+                    <a href="#" class="logo"><img src="icons/logo_3_0.png " alt=""></a>
                     <p class="footer__text">Будь как дома путник,
                     Я ни в чём не откажу</p>
                 </div>
@@ -250,8 +302,7 @@
                     <ul class="footer__list">
                         <li><a href="#" class="footer__link">О нас</a></li>
                         <li><a href="#menu" class="footer__link">Меню</a></li>
-                        <li><a href="#about" class="footer__link">Мероприятия</a></li>
-                        <li><a href="#reviews" class="footer__link">Новости</a></li>
+                        <li><a href="#reviews" class="footer__link">Отзывы</a></li>
                         <li><a href="#contacts" class="footer__link">Контакты</a></li>
                     </ul>
                 </div>
@@ -269,6 +320,72 @@
             </div>
         </div>
     </footer>
+
+    <script>
+
+
+
+        const show = document.querySelector('.show');
+        const cl = document.querySelector('.close');
+        let out = document.querySelector('.main');
+        let nav = document.querySelector('.navigation');
+        show.addEventListener('click', ()=>{
+        
+                nav.style.left ="0%";
+          
+            })
+
+        cl.addEventListener('click', ()=>{
+        
+                nav.style.left ="-100%";
+          
+            })
+
+
+
+            // Получаем элементы слайдера
+const slider = document.querySelector('.slider');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+const slides = Array.from(slider.querySelectorAll('img'));
+const slideCount = slides.length;
+let slideIndex = 0;
+
+// Устанавливаем обработчики событий для кнопок
+prevButton.addEventListener('click', showPreviousSlide);
+nextButton.addEventListener('click', showNextSlide);
+
+// Функция для показа предыдущего слайда
+function showPreviousSlide() {
+  slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+  updateSlider();
+}
+
+// Функция для показа следующего слайда
+function showNextSlide() {
+  slideIndex = (slideIndex + 1) % slideCount;
+  updateSlider();
+}
+
+// Функция для обновления отображения слайдера
+function updateSlider() {
+  slides.forEach((slide, index) => {
+    if (index === slideIndex) {
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
+
+// Инициализация слайдера
+updateSlider();
+
+
+   
+
+    </script>
+
 
 
 </body>
