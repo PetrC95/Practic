@@ -229,15 +229,12 @@ ul {
     transition: var(--transition);
 }
 
+
+
 /* Герой */
 .hero {
     background-image: url(../images/background.jpg); 
-    @media only screen and (min-width: 2560px) {
-  
-    background-image: url(../images/background1.jpg);} 
-    /* background: linear-gradient(rgba(42, 26, 31, 0.7), rgba(42, 26, 31, 0.7)), url('Ссылка на изображение') no-repeat center center/cover; */
-      width: auto;
-  /* max-width: 1080px; */
+
     margin: 0 auto;
     height: 80vh;
     color: var(--white-color);
@@ -245,7 +242,15 @@ ul {
     align-items: center;
     text-align: center;
     padding-top: 180px;
+
+
 }
+
+ @media only screen and (min-width: 2560px) {
+    .hero{
+    background-image: url(../images/background1.jpg)
+ }}
+
 
 .hero__title {
     font-size: 3.5rem;
@@ -669,7 +674,7 @@ ul {
         left: 0;
     }
     
-    .nav__list {
+    .nav__list__ {
         flex-direction: column;
         gap: 20px;
     }
